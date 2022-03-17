@@ -103,7 +103,7 @@ ul {
   flex-wrap: wrap;
 }
 
-.li-style {
+.all-house-names li  {
   background-color: rgba(0,0,0,0.8);
   padding: 12px 8px;
   color: white;
@@ -111,6 +111,13 @@ ul {
   margin: 36px 6px 10px 6px;
   text-align: center;
   font-size: 16px;
+  cursor: pointer;
+}
+
+.all-house-names li:hover {
+  border: 1px solid black ;
+  color: rgba(0,0,0,1);
+  background-color: rgba(255,255,255,0.5);
 }
 
 li {
@@ -168,4 +175,10 @@ button {
   border: 1px solid black;
   color: rgba(0,0,0,1);
   background-color: rgba(255,255,255,0.5);
+}
+
+.active {
+  border: 1px solid black !important;
+  color: rgba(0,0,0,1) !important;
+  background-color: rgba(255,255,255,0.5) !important ;
 }

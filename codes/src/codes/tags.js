@@ -22,7 +22,7 @@ class Tags extends React.Component {
             <>
             <ul className="all-house-names">
                 {
-                    got.houses.map(house => <li key={house.name} onClick={() => this.handleClick(house.name)} className='li-style'>{house.name}</li>)
+                    got.houses.map(house => <li key={house.name} className={(this.state.nameTag === house.name) ? 'active' : ''} onClick={() => this.handleClick(house.name)} >{house.name}</li>)
                 }
             </ul>
             <Card allPeople={(!this.state.nameTag) ? got.houses.map(house => house.people) : got.houses.find(house => (house.name === this.state.nameTag)).people}/>

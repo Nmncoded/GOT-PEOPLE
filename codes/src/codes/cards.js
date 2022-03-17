@@ -1,5 +1,5 @@
 function Card(props) {
-  console.log(props);
+  // console.log(props);
   return (
     <ul className="ul">
       {props.allPeople.flat().map((person) => {
